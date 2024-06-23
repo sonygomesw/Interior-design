@@ -1,0 +1,400 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Police par défaut pour tout le document */
+}
+
+/* Body */
+body {
+    background: #fff; /* Couleur de fond pour tout le corps du document */
+}
+
+/* Assurez-vous qu'il n'y a pas de marge supplémentaire ou de padding qui ajoute un espace */
+.home {
+    margin-bottom: 0; /* Réduisez ou supprimez la marge basse si elle est trop grande */
+}
+
+.image-section {
+    margin-top: 0; /* Assurez-vous qu'il n'y a pas de marge haute inattendue */
+}
+
+/* Listes non ordonnées */
+ul {
+    list-style: none; /* Supprime les puces des listes non ordonnées */
+}
+
+/* Liens */
+a {
+    text-decoration: none; /* Supprime la décoration de soulignement par défaut des liens */
+}
+
+/* Boutons */
+button {
+    cursor: pointer; /* Curseur pointer pour les boutons */
+}
+
+/* Section Accueil */
+.home {
+    min-height: 90vh; /* Hauteur minimale pour la section d'accueil */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), 
+                url("images/bg.jpg"); /* Dégradé et image de fond pour la section d'accueil */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 40px; /* Marge inférieure pour espacer la section suivante */
+    width: 100%;
+    color: #fff; /* Couleur de texte par défaut pour la section d'accueil */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0; /* Assurez-vous qu'il n'y a pas de padding en haut */
+}
+
+/* Menu de Navigation */
+.menu {
+    display: flex;
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: center; /* Centrer les éléments verticalement */
+    width: 100%;
+    padding: 20px 15px;
+    position: absolute; /* Positionner en haut de la page */
+    top: 0; /* Aligné au haut de la page */
+}
+
+/* Masquer le logo */
+.logo {
+    display: none; /* Masquer le logo */
+}
+
+/* Liens dans le menu */
+.links {
+    display: flex;
+}
+
+.links li {
+    margin-left: 20px;
+}
+
+.links li a {
+    color: #fff;
+    position: relative;
+    font-size: 20px;
+}
+
+.links li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #f9ad4a;
+    height: 4px;
+    width: 0;
+    border-radius: 4px;
+    transition: width 0.3s;
+}
+
+.links li a:hover::after {
+    width: 100%;
+}
+
+
+/* Home page content */
+.home_page_content {
+    max-width: 800px;
+    margin-top: 30px;
+}
+
+.home_page_content p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.home_page_content span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.home_page_content span i {
+    color: #f9ad4a;
+    margin-right: 10px;
+}
+
+.home_page_content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.home_page_content .text {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Bouton Blanc */
+.white_btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 30px;
+    transition: 0.5s;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white_btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.white_btn i {
+    margin-left: 10px;
+}
+
+/* Section Image */
+.image-section {
+    display: flex;
+    justify-content: flex-end; /* Centrer les éléments horizontalement */
+    align-items: center; /* Centrer les éléments verticalement */
+    padding: 20px; /* Espacement interne */
+    background-color: #f0f0f0;
+}
+
+.image-with-text {
+    display: flex;
+    align-items: center; /* Centrer verticalement */
+    max-width: 1200px; /* Largeur maximale pour limiter l'espace */
+}
+
+.image-with-text img {
+    max-width: 30%; /* Limiter la largeur de l'image */
+    height: auto;
+    border-radius: 6px; /* Coins arrondis */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Ombre légère */
+    margin-right: 20px; /* Espacement entre l'image et le texte */
+}
+
+.bouton_contact {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin: 30px;
+  }
+  
+  .bouton_contact:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .bouton_contact {
+    transform: translateY(-1px);
+  }
+
+/*2eme section */
+
+.accueil-photos {
+    background-color:#fff;
+    justify-content: center;
+    text-align: center;
+      }
+
+.accueil-photos h3 {
+    margin: auto ;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-style: oblique;
+}
+
+.accueil-photos p {
+    margin: auto ;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.styled-text {
+    letter-spacing: 2px; /* Ajoutez ici la valeur d'espace interléttrage désirée */
+}
+
+.accueil-photos .photo-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.accueil-photos img {
+    max-width: 50%; /* Limite la largeur maximale de l'image à 100% de son conteneur */
+    height: 300px; /* Garde le ratio hauteur/largeur et s'adapte à la largeur maximale */
+    border-radius: 8px; /* Facultatif : arrondi les coins de l'image */
+}
+
+/* Section Decoration */
+.decoration {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajuste la hauteur selon ton besoin */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Assure que le conteneur prenne toute la hauteur de la section */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Remplir le conteneur sans déformer l'image */
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Couche de fond noire semi-transparente */
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* CSS pour les vidéos avec texte au milieu */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajuster la hauteur selon votre besoin */
+    margin-bottom: 20px; /* Espace blanc entre chaque section de décoration et le contenu suivant */
+    overflow: hidden; /* Masque tout contenu débordant */
+    border-radius: 8px; /* Coins arrondis pour le conteneur */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Ombre légère */
+}
+
+.video-container video {
+    width: 100%; /* La vidéo occupe toute la largeur du conteneur */
+    height: 100%; /* La vidéo occupe toute la hauteur du conteneur */
+    object-fit: cover; /* Remplit le conteneur sans déformer la vidéo */
+    display: block; /* Assure le bon affichage en bloc */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  .footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
